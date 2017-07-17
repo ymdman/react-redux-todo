@@ -45,10 +45,10 @@ module.exports = {
          ],
        },
      }),
-     new StyleLintPlugin({
-        files: ['src/components/**/*.css', '!src/styles/normalize.css'],
-        configFile: '.stylelintrc',
-     }),
+    //  new StyleLintPlugin({
+    //     files: ['src/components/**/*.css', '!src/styles/normalize.css'],
+    //     configFile: '.stylelintrc',
+    //  }),
   ],
 
   devServer: {
