@@ -9,7 +9,6 @@ import addTodo from './actions/action';
 const store = createStore(todo);
 
 store.dispatch(addTodo('Hello World!'));
-console.log(store.getState());
 
 render(
   <Provider store={store}>
