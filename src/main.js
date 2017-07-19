@@ -4,11 +4,12 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import todo from './reducers';
 import App from './components/App';
-import addTodo from './actions/action';
+import { addTodo, toggleTodo } from './actions/action';
 
 const store = createStore(todo);
 
 store.dispatch(addTodo('Hello World!'));
+store.dispatch(toggleTodo(0));
 
 render(
   <Provider store={store}>

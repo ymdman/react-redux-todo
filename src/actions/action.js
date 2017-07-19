@@ -10,4 +10,13 @@ const addTodo = (text) => {
   return data;
 };
 
-export default addTodo;
+const toggleTodo = (id) => {
+  const data = {
+    type: 'TOGGLE_TODO',
+    id,
+  };
+
+  return data;
+};
+
+export { addTodo, toggleTodo };
